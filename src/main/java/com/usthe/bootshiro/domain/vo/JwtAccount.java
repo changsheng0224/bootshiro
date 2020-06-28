@@ -121,4 +121,18 @@ public class JwtAccount implements Serializable {
     public void setHost(String host) {
         this.host = host;
     }
+
+    @Override
+    public String toString() {
+        return "JwtAccount{" +
+                "tokenId='" + tokenId + '\'' +
+                ", appId='" + appId + '\'' +
+                ", issuer='" + issuer + '\'' +
+                ", issuedAt=" + issuedAt +
+                ", audience='" + audience + '\'' +
+                ", roles='" + roles + '\'' +
+                ", perms='" + perms + '\'' +
+                ", host='" + host + '\'' +
+                '}';
+    }
 }

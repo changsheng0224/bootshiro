@@ -4,7 +4,7 @@
 FROM openjdk:12-alpine
 
 #签名
-MAINTAINER tomsun28 "tomsun28@outlook.com"
+MAINTAINER abel
 
 
 RUN rm -rf /opt/running/bootshiro*

@@ -197,4 +197,12 @@ public class JsonWebTokenUtil {
         return set;
     }
 
+    public static void main(String[] args) {
+        String s = JsonWebTokenUtil.issueJWT("id", "subject", "issuer", 3600L, "roles", "permissions", SignatureAlgorithm.HS512);
+        System.out.println("s" + s);
+        JwtAccount jwtAccount = JsonWebTokenUtil.parseJwt(s, JsonWebTokenUtil.SECRET_KEY);
+        System.out.println("jwtAccount:" + jwtAccount.toString());
+
+    }
+
 }
